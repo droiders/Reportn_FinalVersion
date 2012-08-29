@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp" >
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:background="@color/black_color" >
+
+        <ImageView
+            android:id="@+id/fd_pip1"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/overlay_bubble_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4.0dip"
+            android:layout_weight="0.98"
+            android:gravity="bottom"
+            android:text="reportn !"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    
+        <ImageButton
+            android:id="@+id/fd_pip"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_home_list_place" 
+            android:background="@null"/>
+        
+    </LinearLayout>
+ <ImageView
+        android:id="@+id/drag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bubble"
+        android:visibility="gone" />
+
+    <requestFocus android:focusable="false" />
+
+    <com.google.android.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="35dp"
+        android:apiKey="0txfSdKgq1jyXITrT4qEfW_cUOttal92XYm4zBA"
+        android:clickable="true" />
+
+</RelativeLayout>

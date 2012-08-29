@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="left"
+    android:background="@color/home_background" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/black_color" >
+
+        <ImageView
+            android:id="@id/fd_pip"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@id/overlay_bubble_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4.0dip"
+            android:layout_toLeftOf="@id/overlay_bubble_arrow"
+            android:layout_weight="0.98"
+            android:gravity="bottom"
+            android:text="reportn !"
+            android:textColor="#ffffffff"
+            android:textStyle="bold" />
+    
+        <ImageView
+            android:id="@id/fd_pip"
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_home_list_place" />
+        
+    </LinearLayout>
+    
+
+</RelativeLayout>
+
+  
+    

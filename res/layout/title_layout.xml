@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/org.taptwo.android.widget.viewflow.example"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" >
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center_horizontal" android:id="@+id/header_layout"
+		android:orientation="vertical" android:layout_height="wrap_content">
+
+		<org.taptwo.android.widget.TitleFlowIndicator
+		    android:id="@+id/viewflowindic"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dip"
+		    android:textColor="#454545"
+		    android:textColorHint="#454545"
+		    app:clipPadding="5dp"
+		    app:customTypeface="fonts/Antic.ttf"
+		    app:footerColor="@color/vert"
+		    app:footerLineHeight="2dp"
+		    app:footerTriangleHeight="10dp"
+		    app:selectedColor="@color/vert"
+		    app:selectedSize="12dp"
+		    app:textColor="#FFFFFFFF"
+		    app:textSize="12dp"
+		    app:titlePadding="10dp" >
+
+</org.taptwo.android.widget.TitleFlowIndicator>
+
+	</LinearLayout>
+	<org.taptwo.android.widget.ViewFlow
+		android:duplicateParentState="true" android:id="@+id/viewflow"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@color/background_color"></org.taptwo.android.widget.ViewFlow>
+</LinearLayout> 
